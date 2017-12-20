@@ -83,6 +83,15 @@
           $publico = "$diretorio/public_html";
           $logs    = "$diretorio/logs";
           echo "- Diretórios criados\n";
+          $dir   = [];
+          $dir[] = "<Directory $diretorio>\n";
+          $dir[] = "  Options Indexes FollowSymLinks\n";
+          $dir[] = "  AllowOverride None\n";
+          $dir[] = "  Require all granted\n";
+          $dir[] = "</Directory>\n";
+          foreach ($dir as $key => $value) {
+            shell_exec("echo '$value' >> /etc/apache2/apache2.conf");
+          }
         } else {
           die("Diretório não especificado...\n");
         }
