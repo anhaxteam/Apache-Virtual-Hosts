@@ -22,7 +22,7 @@ Fedora: sudo dnf install php-cli
 Para iniciar a ferramenta basta digitar:
 
 ```
-php ApacheEasyVH.php
+sudo php ApacheEasyVH.php
 ```
 
 E criar conforme seja seu interesse, pode escolher utilizar:
@@ -30,6 +30,8 @@ E criar conforme seja seu interesse, pode escolher utilizar:
 - Banco de dados (por enquanto somente MySQL)
 - Criar um usuário para o site
 - Definir um diretório específico para o site
+
+** OBS: É necessário estar logado como root.
 
 ## Testado em:
 
