@@ -66,7 +66,7 @@
             }
             break;
           case 2:
-            if (!file_exists('/etc/init.d/httpd')) {
+            if (!file_exists('/etc/httpd')) {
               echo "\033[32mAparentemente você não está usando nenhuma distribuição baseada em Fedora\n\033[0m";
             } else {
               $this->verificarFedora();
