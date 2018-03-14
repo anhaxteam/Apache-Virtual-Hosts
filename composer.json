@@ -1,5 +1,5 @@
 {
-    "name": "anhaxteam/Apache-Virtual-Hosts",
+    "name": "anhaxteam/apache-virtual-hosts",
     "description": "Create Apache virtualhosts easily!",
     "type": "library",
     "license": "MIT",
